@@ -14,7 +14,7 @@ import park from "../images/park.png"
 import pasnik from "../images/pasnik.png"
 import wieza from "../images/wieza.png"
 
-export default function OProjekcie() {
+export default function () {
     return <Layout>
         <h1>Odznaki</h1>
         

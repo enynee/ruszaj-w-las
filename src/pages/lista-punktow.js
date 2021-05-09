@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 
-export default function OProjekcie() {
+export default function() {
     return <Layout>
         <h1>Lista punktów</h1>
         <ul>
