@@ -1,0 +1,19 @@
+header {
+    height: 95px;
+    background-color: #F3F3F3;
+}
+
+footer {
+    height: 160px;
+    background-color: #DADADA;
+}
+
+footer>li {
+
+}
+
+#logo {
+    float: left;
+    width: 20%;
+}
+
