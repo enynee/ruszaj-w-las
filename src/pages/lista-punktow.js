@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 export default function() {
     return <Layout>
         <h1>Lista punktów</h1>
-        <ul>
+        <ul class="lista">
             <li>Wieża Obserwacyjna Nr 1 w Ptasim Raju </li>
             <li>Drzewo mateczne nieopodal Szwedzkiej</li>
             <li>Dojrzały las i młodnik</li>

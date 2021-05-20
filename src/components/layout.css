@@ -3,17 +3,58 @@ header {
     background-color: #F3F3F3;
 }
 
+#logo {
+    float: left;
+    width: 26%;
+}
+
+#name>img {
+    margin-top:12px;
+}
+
+#logo>img {
+    margin-top:5px;
+}
+
 footer {
     height: 160px;
+    width:100%;
     background-color: #DADADA;
 }
 
-footer>li {
-
+footer>ul {
+    list-style: none;
+    padding-left: 15px;
+    padding-top: 1px;
 }
 
-#logo {
-    float: left;
-    width: 20%;
+footer>ul>li {
+    margin-top: 26px;
 }
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0px;
+}
+
+h1 {
+    font-size:24px;
+    font-weight:bold;
+    padding-left:15px;
+    padding-top:15px;
+}
+
+/* lista punktów */
+
+.lista {
+    list-style: none;
+    padding: 10px;
+}
+
+.lista>li {
+    border-bottom: 1px solid #d0d1d3;
+    padding:15px;
+    font-size:16px;
+}
+
 

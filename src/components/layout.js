@@ -17,7 +17,6 @@ export default function Layout({ children }) {
 
 
       {children}
-      <hr></hr>
       <footer>
         <ul>
           <li>Lista punktów</li>
