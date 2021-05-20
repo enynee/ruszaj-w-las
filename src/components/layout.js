@@ -1,5 +1,6 @@
 import React from "react"
 import "./layout.css"
+import "../bulma.min.css"
 import logo from "../images/logo.png"
 import name from "../images/name.png"
 
@@ -14,9 +15,11 @@ export default function Layout({ children }) {
         </div>
 
       </header>
-
-
+      <main>
       {children}
+      </main>
+
+ 
       <footer>
         <ul>
           <li>Lista punktów</li>

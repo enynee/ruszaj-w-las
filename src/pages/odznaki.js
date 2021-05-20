@@ -17,19 +17,25 @@ import wieza from "../images/wieza.png"
 export default function () {
     return <Layout>
         <h1>Odznaki</h1>
+        <div class="columns">
+            <div class="column">
+                <div><img src={wieza}/><span class="title-point">Wieża Obserwacyjna Nr 1 w Ptasim Raju</span></div>
+                <div><img src={las}/><span class="title-point">Dojrzały las i młodnik</span></div>
+                <div><img src={dolina}/><span class="title-point">Dolina Czystej Wody</span></div>
+                <div><img src={glaz}/><span class="title-point">Głaz w Obszarze Natura 2000 Pełcznica</span></div>
+                <div><img src={park}/><span class="title-point">Trójmiejski Park Krajobrazowy</span></div>
+                <div><img src={mokradlo}/><span class="title-point">Mokradło Rozlewisko</span></div>
+            </div>
+            <div class="column">
+                <div><img src={drzewomateczne}/><span class="title-point">Drzewo mateczne nieopodal Szwedzkiej</span></div>
+                <div><img src={pasnik}/><span class="title-point">Paśnik przy ul. Sopockiej</span></div>
+                <div><img src={modrzew}/><span class="title-point">Pomnik przyrody modrzew Zbyszko Rumia</span></div>
+                <div><img src={lipa}/><span class="title-point">Pomnik przyrody Lipa szerokolistna</span></div>
+                <div><img src={dab}/><span class="title-point">Dąb powalony Dolina Samborowo</span></div>
+                <div><img src={bracia}/><span class="title-point">Bracia Kaszuby</span></div>
+            </div>
+        </div>
+        <div class="odznaka-title"><img src={odznaka}/><span class="title-odznakaterenowa">Odznaka Terenowa</span></div>
         
-        <p><img src={wieza}/>Wieża Obserwacyjna Nr 1 w Ptasim Raju</p>
-        <p><img src={drzewomateczne}/>Drzewo mateczne nieopodal Szwedzkiej</p>
-        <p><img src={las}/>Dojrzały las i młodnik</p>
-        <p><img src={pasnik}/>Paśnik przy ul. Sopockiej</p>
-        <p><img src={dolina}/>Dolina Czystej Wody</p>
-        <p><img src={modrzew}/>Pomnik przyrody modrzew Zbyszko Rumia</p>
-        <p><img src={glaz}/>Głaz w Obszarze Natura 2000 Pełcznica</p>
-        <p><img src={lipa}/>Pomnik przyrody Lipa szerokolistna</p>
-        <p><img src={park}/>Trójmiejski Park Krajobrazowy</p>
-        <p><img src={dab}/>Dąb powalony Dolina Samborowo</p>
-        <p><img src={mokradlo}/>Mokradło Rozlewisko</p>
-        <p><img src={bracia}/>Bracia Kaszuby</p>
-        <p><img src={odznaka}/>Odznaka Terenowa</p>
     </Layout>
 }

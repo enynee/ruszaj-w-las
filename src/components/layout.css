@@ -23,13 +23,14 @@ footer {
 }
 
 footer>ul {
-    list-style: none;
     padding-left: 15px;
     padding-top: 1px;
 }
 
 footer>ul>li {
-    margin-top: 26px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 body {
@@ -37,7 +38,11 @@ body {
     margin: 0px;
 }
 
-h1 {
+li {
+    list-style: none;
+}
+
+main>h1 {
     font-size:24px;
     font-weight:bold;
     padding-left:15px;
@@ -47,7 +52,6 @@ h1 {
 /* lista punktów */
 
 .lista {
-    list-style: none;
     padding: 10px;
 }
 
@@ -57,4 +61,81 @@ h1 {
     font-size:16px;
 }
 
+/* odznaki */
 
+.columns {
+    margin-top:15px !important;
+}
+
+.column {
+    margin-bottom: 20px;
+    width: 180px;
+    margin: 0 auto;
+    min-width: 180px;
+    float:left;
+    padding: 10px !important;
+    margin-left: 9px;
+}
+
+.column>div {
+    width: 160px;
+    margin: 0 auto;
+    min-width: 160px;
+    text-align: center;
+    height: 210px;
+    margin-bottom: 20px;
+}
+
+.column>div>img {
+    width:150px;
+    height:150px;
+}
+
+.title-point {
+    font-size:14px;
+}
+
+.odznaka-title {
+    margin-bottom: 50px;
+}
+
+.title-odznakaterenowa {
+    width: 360px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 112px;
+}
+
+div.odznaka-title>img {
+    width: 200px;
+    height:200px;
+    margin-bottom: 10px;
+    margin-left: 75px;
+}
+
+/* o projekcie */
+
+.center {
+    font-size:18px;
+    text-align: center;
+    padding:20px;
+    margin-bottom:10px;
+}
+
+.bold {
+    font-size:20px;
+    font-weight:600;
+    text-align: center;
+    padding:15px;
+    margin-bottom:10px;
+}
+
+#gray {
+    background-color: #DADADA;
+}
+
+#green {
+    background-color: #284243;
+    border-radius: 17px;
+    box-shadow: 5px 10px #888888;
+}
