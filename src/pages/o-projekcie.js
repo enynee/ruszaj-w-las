@@ -12,11 +12,13 @@ export default function OProjekcie() {
 
         <div id="gray">
         <div id="green">
-            <p>Zadbaj o bezpieczeństwo</p>
-            <p>Punkty zlokalizowane są w terenie, zalecamy korzystać z aplikacji w towarzystwie osoby dorosłej. Przed wyruszeniem w drogę naładuj telefon, spakuj do plecaka wodę oraz przekąski ;)</p>
+            <p class="white-bold">Zadbaj o bezpieczeństwo</p>
+            <p class="white">Punkty zlokalizowane są w terenie, zalecamy korzystać z aplikacji w towarzystwie osoby dorosłej. Przed wyruszeniem w drogę naładuj telefon, spakuj do plecaka wodę oraz przekąski ;)</p>
         </div>
         </div>
+        <div class="box-white">
         <p>Aplikacja Ruszaj w Las powstała w ramach projektu inżynieryjnego studentki Leśnictwa WSZŚ w Tucholi.</p>
         <p>Do poprawnego działania aplikacji wymagana jest zgoda na udostępnienie lokalizacji.</p>
+        </div>
     </Layout>
 }

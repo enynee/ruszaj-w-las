@@ -127,15 +127,50 @@ div.odznaka-title>img {
     font-weight:600;
     text-align: center;
     padding:15px;
-    margin-bottom:10px;
+    margin-bottom:50px;
 }
 
 #gray {
     background-color: #DADADA;
+    height: 340px;
+    padding-top: 50px;
+
 }
 
 #green {
     background-color: #284243;
     border-radius: 17px;
-    box-shadow: 5px 10px #888888;
+    width: 330px;
+    margin-left: 15px;
+    height: 230px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.white-bold {
+    font-size: 20px;
+    font-weight:600;
+    color:#ffffff;
+    width: 330px;
+    text-align: center;
+    margin-bottom:15px;
+    padding-top: 25px;
+}
+
+.white {
+    font-size: 16px;
+    color:#ffffff;
+    width: 330px;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+}
+
+.box-white {
+    height: 280px;
+    margin-top: 20px;
+}
+
+div.box-white>p {
+padding: 20px;
+text-align: center;
+font-size: 18px;
 }
