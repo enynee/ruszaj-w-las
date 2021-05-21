@@ -11,7 +11,6 @@ export default function() {
         <img src={wieza} className="czarno-biale"/>
         </div> }
 
-
         { zdobyta === true && <div className="cel brawo">
             <p className="white-bold">Brawo!</p>
             <p className="white">Jesteś u celu!</p>
