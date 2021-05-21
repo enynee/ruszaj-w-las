@@ -7,8 +7,8 @@ import name from "../images/name.png"
 export default function Layout({ children }) {
   return <div>
       <header>
-        <div id="logo">
-          <img src={logo} width="80" height="80"/>
+        <div id="logo"><a href="/">
+          <img src={logo} width="80" height="80"/></a>
         </div>
         <div id="name"><a href="/">
           <img src={name} width="215" height="70"/></a>

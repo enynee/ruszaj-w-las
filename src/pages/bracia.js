@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import bracia from "../images/bracia.png"
 
 export default function() {
-    let zdobyta = true;
+    let zdobyta = false;
     return <Layout>
         <h1>Bracia Kaszuby</h1>
 
