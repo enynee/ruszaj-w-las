@@ -4,19 +4,19 @@ import Layout from "../components/layout"
 export default function OProjekcie() {
     return <Layout>
         <h1>O projekcie</h1>
-        <p class="center">Aplikacja Ruszaj w Las to gra edukacyjno-terenowa dla uczniów szkoły podstawowej.
+        <p className="center">Aplikacja Ruszaj w Las to gra edukacyjno-terenowa dla uczniów szkoły podstawowej.
         Celem gry jest odwiedzenie 12 punktów zlokalizowanych na terenie Trójmiejskiego Parku Krajobrazowego.
         Po dotarciu do celu i zapoznaniu się z informacjami, gracz otrzymuje pieczątkę.</p>
 
-        <p class="bold">Zdobądź 12 pieczątek i uzyskaj Odznakę Terenową!</p>
+        <p className="bold">Zdobądź 12 pieczątek i uzyskaj Odznakę Terenową!</p>
 
         <div id="gray">
         <div id="green">
-            <p class="white-bold">Zadbaj o bezpieczeństwo</p>
-            <p class="white">Punkty zlokalizowane są w terenie, zalecamy korzystać z aplikacji w towarzystwie osoby dorosłej. Przed wyruszeniem w drogę naładuj telefon, spakuj do plecaka wodę oraz przekąski ;)</p>
+            <p className="white-bold">Zadbaj o bezpieczeństwo</p>
+            <p className="white">Punkty zlokalizowane są w terenie, zalecamy korzystać z aplikacji w towarzystwie osoby dorosłej. Przed wyruszeniem w drogę naładuj telefon, spakuj do plecaka wodę oraz przekąski ;)</p>
         </div>
         </div>
-        <div class="box-white">
+        <div className="box-white">
         <p>Aplikacja Ruszaj w Las powstała w ramach projektu inżynieryjnego studentki Leśnictwa WSZŚ w Tucholi.</p>
         <p>Do poprawnego działania aplikacji wymagana jest zgoda na udostępnienie lokalizacji.</p>
         </div>

@@ -222,3 +222,28 @@ div.punkt-odznaka>img {
     font-size:20px;
     font-weight:600;
 }
+
+/* index */
+
+.obrazki-text {
+    width: 320px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: -20px 20px 30px 20px;
+}
+
+#gatsby-focus-wrapper > div > main > div:nth-child(4) > p {
+    margin-bottom:100px;
+}
+
+.obrazki-box {
+    width:360px;
+
+}
+
+div.obrazki-box>img {
+    width: 300px;
+    height: 300px;
+    margin: 0px 30px;
+}

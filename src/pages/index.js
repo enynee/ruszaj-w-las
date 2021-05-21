@@ -6,24 +6,26 @@ import odznakaterenowa from "../images/odznakaterenowa.png"
 
 export default function Home() {
   return <Layout>
-    
-  <div>
-      <p>Zdobądź Odnzakę Terenową</p>
-      <p>Odwiedź wszystkie lokalizacje w Trójmiejskim Parku Karjobrazowym. Podczas wycieczek zbieraj pieczątki, by zdobyć Odznakę Terenową</p>
-  </div>
+    <div id="gray">
+      <div id="green">
+          <p className="white-bold">Zdobądź Odznakę Terenową</p>
+          <p className="white">Odwiedź wszystkie lokalizacje w Trójmiejskim Parku Krajobrazowym. Podczas wycieczek zbieraj pieczątki, by zdobyć Odznakę Terenową.</p>
+      </div>
+    </div>
 
-  <img src={lokalizacja}/>
-  <p>Odnajdź 12 punktów na terenie Trójmiejskiego Parku Krajobrazowego</p>
+    <div className="obrazki-box">
+    <img src={lokalizacja} />
+    <p className="obrazki-text">Odnajdź 12 punktów na terenie Trójmiejskiego Parku Krajobrazowego</p>
+    </div>
 
-  <img src={lupa}/>
-  <p>Zapoznaj się z cennymi informacjami przyrodniczymi</p>
+    <div className="obrazki-box">
+    <img src={lupa} />
+    <p className="obrazki-text">Zapoznaj się z cennymi informacjami przyrodniczymi</p>
+    </div>
 
-  <img src={odznakaterenowa}/>
-  <p>Zdobądź Odznakę terenową!</p>
-
-
-
-
-
-</Layout>
+    <div className="obrazki-box">
+    <img src={odznakaterenowa} />
+    <p className="obrazki-text">Zdobądź Odznakę terenową!</p>
+    </div>
+  </Layout>
 }
