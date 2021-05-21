@@ -10,8 +10,8 @@ export default function Layout({ children }) {
         <div id="logo">
           <img src={logo} width="80" height="80"/>
         </div>
-        <div id="name">
-          <img src={name} width="215" height="70"/>
+        <div id="name"><a href="/">
+          <img src={name} width="215" height="70"/></a>
         </div>
 
       </header>
