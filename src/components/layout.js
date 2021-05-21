@@ -22,9 +22,9 @@ export default function Layout({ children }) {
  
       <footer>
         <ul>
-          <li>Lista punktów</li>
-          <li>Odznaki</li>
-          <li>O projekcie</li>
+          <li><a href="/lista-punktow">Lista punktów</a></li>
+          <li><a href="/odznaki">Odznaki</a></li>
+          <li><a href="/o-projekcie">O projekcie</a></li>
         </ul>
       </footer>
     </div>

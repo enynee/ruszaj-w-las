@@ -33,6 +33,10 @@ footer>ul>li {
     font-weight: 600;
 }
 
+a {
+    color: #284243 !important;
+}
+
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0px;
