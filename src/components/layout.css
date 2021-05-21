@@ -223,6 +223,34 @@ div.punkt-odznaka>img {
     font-weight:600;
 }
 
+.brawo {
+    background-color: #284243;
+    border-radius: 17px;
+    width: 320px;
+    margin-left: 20px;
+    height: 135px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.opis-punktu {
+    padding: 0px 25px;
+}
+
+.p-opis {
+    margin-bottom: 12px;
+}
+
+.czarno-biale {
+    -webkit-filter: grayscale(90%);
+    -moz-filter: grayscale(90%);
+    -o-filter: grayscale(90%);
+    -ms-filter: grayscale(90%);
+    filter: grayscale(90%);
+}
+
+
 /* index */
 
 .obrazki-text {
