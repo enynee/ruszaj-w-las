@@ -30,7 +30,7 @@ footer>ul {
 footer>ul>li {
     margin-top: 20px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 body {
@@ -45,8 +45,9 @@ li {
 main>h1 {
     font-size:24px;
     font-weight:bold;
-    padding-left:15px;
-    padding-top:15px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 /* lista punktów */
@@ -59,6 +60,12 @@ main>h1 {
     border-bottom: 1px solid #d0d1d3;
     padding:15px;
     font-size:16px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+#gatsby-focus-wrapper > div > main >ul > li:nth-child(12) {
+    margin-bottom: 70px;
 }
 
 /* odznaki */
@@ -69,18 +76,15 @@ main>h1 {
 
 .column {
     margin-bottom: 20px;
-    width: 180px;
+    width: 175px;
     margin: 0 auto;
-    min-width: 180px;
     float:left;
-    padding: 10px !important;
-    margin-left: 9px;
+    padding: 8px !important;
 }
 
 .column>div {
     width: 160px;
     margin: 0 auto;
-    min-width: 160px;
     text-align: center;
     height: 210px;
     margin-bottom: 20px;
@@ -91,12 +95,20 @@ main>h1 {
     height:150px;
 }
 
+.left {
+    margin-left:15px
+}
+
+.right {
+    margin-right:2px;
+}
+
 .title-point {
     font-size:14px;
 }
 
 .odznaka-title {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .title-odznakaterenowa {
@@ -140,37 +152,37 @@ div.odznaka-title>img {
 #green {
     background-color: #284243;
     border-radius: 17px;
-    width: 330px;
-    margin-left: 15px;
-    height: 230px;
+    width: 320px;
+    margin-left: 20px;
+    height: 235px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .white-bold {
     font-size: 20px;
-    font-weight:600;
-    color:#ffffff;
-    width: 330px;
+    font-weight: 600;
+    color: #ffffff;
+    width: 320px;
     text-align: center;
-    margin-bottom:15px;
-    padding-top: 25px;
+    margin-bottom: 24px;
+    padding-top: 23px;
 }
 
 .white {
     font-size: 16px;
-    color:#ffffff;
-    width: 330px;
+    color: #ffffff;
+    width: 320px;
     text-align: center;
     padding: 0px 10px 0px 10px;
 }
 
 .box-white {
-    height: 280px;
-    margin-top: 20px;
+    height: 232px;
+    margin-top: 62px;
 }
 
 div.box-white>p {
-padding: 20px;
-text-align: center;
-font-size: 18px;
+    padding: 0px 20px 5px 20px;
+    text-align: center;
+    font-size: 18px;
 }

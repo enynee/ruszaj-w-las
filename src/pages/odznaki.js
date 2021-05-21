@@ -18,7 +18,7 @@ export default function () {
     return <Layout>
         <h1>Odznaki</h1>
         <div class="columns">
-            <div class="column">
+            <div class="column left">
                 <div><img src={wieza}/><span class="title-point">Wieża Obserwacyjna Nr 1 w Ptasim Raju</span></div>
                 <div><img src={las}/><span class="title-point">Dojrzały las i młodnik</span></div>
                 <div><img src={dolina}/><span class="title-point">Dolina Czystej Wody</span></div>
@@ -26,7 +26,7 @@ export default function () {
                 <div><img src={park}/><span class="title-point">Trójmiejski Park Krajobrazowy</span></div>
                 <div><img src={mokradlo}/><span class="title-point">Mokradło Rozlewisko</span></div>
             </div>
-            <div class="column">
+            <div class="column right">
                 <div><img src={drzewomateczne}/><span class="title-point">Drzewo mateczne nieopodal Szwedzkiej</span></div>
                 <div><img src={pasnik}/><span class="title-point">Paśnik przy ul. Sopockiej</span></div>
                 <div><img src={modrzew}/><span class="title-point">Pomnik przyrody modrzew Zbyszko Rumia</span></div>
