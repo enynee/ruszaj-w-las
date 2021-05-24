@@ -1,9 +1,22 @@
 import React from "react"
 import Layout from "../components/layout"
 import wieza from "../images/wieza.png"
+import { oblicz_odleglosc_w_metrach } from "../helpers";
 
 export default function() {
     let zdobyta = false;
+    let odleglosc = Infinity;
+    const koordynatyPunktu = [54.348361, 18.570222];
+    if (navigator) {
+        const watchID = navigator.geolocation.watchPosition((position) => {
+            odleglosc = oblicz_odleglosc_w_metrach(position, koordynatyPunktu[0], koordynatyPunktu[1]);
+            if (odleglosc <= 100) {
+                zdobyta = true;
+            }
+        });
+    }
+
+    
     return <Layout>
         <h1>Test</h1>
 
@@ -26,13 +39,15 @@ export default function() {
             <p className="p-opis">Ten pies jest mój, on jest też trochę twój</p> 
         </div>}
 
-        { zdobyta === false &&<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.074805516368!2d18.800720316005584!3d54.355659106330684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDIxJzIwLjQiTiAxOMKwNDgnMTAuNSJF!5e0!3m2!1spl!2spl!4v1620554305728!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>}
+        { zdobyta === false &&<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d709.30421214686!2d18.569675829271038!3d54.348351780433106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDIwJzU0LjEiTiAxOMKwMzQnMTIuOCJF!5e1!3m2!1spl!2spl!4v1621882704715!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>}
 
         { zdobyta === true && <div className="punkt-odznaka">
         <img src={wieza}/>
         </div> }
 
-        { zdobyta === false && <div class="cel">Jesteś xm od celu</div> }
+        { zdobyta === false && <div class="cel">Jesteś {odleglosc}m od celu</div> }
+
+
 
     </Layout>
 }
