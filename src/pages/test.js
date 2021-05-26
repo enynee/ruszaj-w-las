@@ -15,6 +15,7 @@ export default function() {
             setOdleglosc(metry);
             if (metry <= 100) {
                 setZdobyta(true)
+                localStorage.setItem("test", "zdobyta");
             }
         });
     }
