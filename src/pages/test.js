@@ -7,7 +7,7 @@ export default function() {
     let zdobyta = false;
     let odleglosc = Infinity;
     const koordynatyPunktu = [54.348361, 18.570222];
-    if (navigator) {
+    if (typeof window !== "undefined") {
         const watchID = navigator.geolocation.watchPosition((position) => {
             odleglosc = oblicz_odleglosc_w_metrach(position, koordynatyPunktu[0], koordynatyPunktu[1]);
             if (odleglosc <= 100) {
