@@ -8,7 +8,7 @@
 // }
 
 export function oblicz_odleglosc_w_metrach(position, lat, lon){
-  return calcCrow(position.coords.latitude, position.coords.longitude, lat, lon) * 1000;
+  return Math.round(calcCrow(position.coords.latitude, position.coords.longitude, lat, lon) * 1000);
 }
 
 // function pokaz_odznake(odleglosc_w_metrach) {

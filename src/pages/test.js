@@ -1,17 +1,20 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/layout"
 import wieza from "../images/wieza.png"
 import { oblicz_odleglosc_w_metrach } from "../helpers";
 
 export default function() {
-    let zdobyta = false;
-    let odleglosc = Infinity;
+    const [zdobyta, setZdobyta] = useState(false);
+    const [odleglosc, setOdleglosc] = useState(Infinity);
+
     const koordynatyPunktu = [54.348361, 18.570222];
     if (typeof window !== "undefined") {
         const watchID = navigator.geolocation.watchPosition((position) => {
-            odleglosc = oblicz_odleglosc_w_metrach(position, koordynatyPunktu[0], koordynatyPunktu[1]);
-            if (odleglosc <= 100) {
-                zdobyta = true;
+
+            const metry = oblicz_odleglosc_w_metrach(position, koordynatyPunktu[0], koordynatyPunktu[1]);
+            setOdleglosc(metry);
+            if (metry <= 100) {
+                setZdobyta(true)
             }
         });
     }
