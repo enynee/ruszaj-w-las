@@ -1,9 +1,24 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/layout"
 import modrzew from "../images/modrzew.png"
+import { oblicz_odleglosc_w_metrach } from "../helpers";
 
 export default function() {
-    let zdobyta = false;
+    const [zdobyta, setZdobyta] = useState(false);
+    const [odleglosc, setOdleglosc] = useState(Infinity);
+
+    const koordynatyPunktu = [54.561533, 18.354844];
+    if (typeof window !== "undefined") {
+        const watchID = navigator.geolocation.watchPosition((position) => {
+
+            const metry = oblicz_odleglosc_w_metrach(position, koordynatyPunktu[0], koordynatyPunktu[1]);
+            setOdleglosc(metry);
+            if (metry <= 100) {
+                setZdobyta(true)
+                localStorage.setItem("modrzew", "zdobyta");
+            }
+        });
+    }
     return <Layout>
         <h1>Pomnik przyrody modrzew Zbyszko Rumia</h1>
 
@@ -34,7 +49,7 @@ export default function() {
         <img src={modrzew}/>
         </div> }
 
-        { zdobyta === false && <div class="cel">Jesteś xm od celu</div> }
+        { zdobyta === false && <div class="cel">Jesteś {odleglosc}m od celu</div> }
 
     </Layout>
 }

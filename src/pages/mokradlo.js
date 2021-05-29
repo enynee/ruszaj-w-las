@@ -1,10 +1,25 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/layout"
 import mokradlo from "../images/mokradlo.png"
+import { oblicz_odleglosc_w_metrach } from "../helpers";
 
 
 export default function() {
-    let zdobyta = false;
+    const [zdobyta, setZdobyta] = useState(false);
+    const [odleglosc, setOdleglosc] = useState(Infinity);
+
+    const koordynatyPunktu = [54.448286, 18.494548];
+    if (typeof window !== "undefined") {
+        const watchID = navigator.geolocation.watchPosition((position) => {
+
+            const metry = oblicz_odleglosc_w_metrach(position, koordynatyPunktu[0], koordynatyPunktu[1]);
+            setOdleglosc(metry);
+            if (metry <= 100) {
+                setZdobyta(true)
+                localStorage.setItem("mokradlo", "zdobyta");
+            }
+        });
+    }
     return <Layout>
         <h1>Mokradło Rozlewisko</h1>
 
@@ -34,7 +49,7 @@ export default function() {
         <img src={mokradlo}/>
         </div> }
 
-        { zdobyta === false && <div class="cel">Jesteś xm od celu</div> }
+        { zdobyta === false && <div class="cel">Jesteś {odleglosc}m od celu</div> }
 
     </Layout>
 }

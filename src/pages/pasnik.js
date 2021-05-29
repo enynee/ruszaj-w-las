@@ -1,9 +1,24 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/layout"
 import pasnik from "../images/pasnik.png"
+import { oblicz_odleglosc_w_metrach } from "../helpers";
 
 export default function() {
-    let zdobyta = false;
+    const [zdobyta, setZdobyta] = useState(false);
+    const [odleglosc, setOdleglosc] = useState(Infinity);
+
+    const koordynatyPunktu = [54.459683, 18.515259];
+    if (typeof window !== "undefined") {
+        const watchID = navigator.geolocation.watchPosition((position) => {
+
+            const metry = oblicz_odleglosc_w_metrach(position, koordynatyPunktu[0], koordynatyPunktu[1]);
+            setOdleglosc(metry);
+            if (metry <= 100) {
+                setZdobyta(true)
+                localStorage.setItem("pasnik", "zdobyta");
+            }
+        });
+    }
     return <Layout>
         <h1>Paśnik przy ul. Sopockiej</h1>
 
@@ -34,7 +49,7 @@ export default function() {
         <img src={pasnik}/>
         </div> }
 
-        { zdobyta === false && <div class="cel">Jesteś xm od celu</div> }
+        { zdobyta === false && <div class="cel">Jesteś {odleglosc}m od celu</div> }
 
     </Layout>
 }
