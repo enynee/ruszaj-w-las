@@ -1,9 +1,25 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/layout"
 import glaz from "../images/glaz.png"
+import { oblicz_odleglosc_w_metrach } from "../helpers";
 
 export default function() {
-    let zdobyta = false;
+    const [zdobyta, setZdobyta] = useState(false);
+    const [odleglosc, setOdleglosc] = useState(Infinity);
+
+    const koordynatyPunktu = [54.522946, 18.248281];
+    if (typeof window !== "undefined") {
+        const watchID = navigator.geolocation.watchPosition((position) => {
+
+            const metry = oblicz_odleglosc_w_metrach(position, koordynatyPunktu[0], koordynatyPunktu[1]);
+            setOdleglosc(metry);
+            if (metry <= 100) {
+                setZdobyta(true)
+                localStorage.setItem("glaz", "zdobyta");
+            }
+        });
+    }
+
     return <Layout>
         <h1>Głaz w Obszarze Natura 2000 Pełcznica</h1>
 
@@ -35,7 +51,7 @@ export default function() {
         <img src={glaz}/>
         </div> }
 
-        { zdobyta === false && <div class="cel">Jesteś xm od celu</div> }
+        { zdobyta === false && <div class="cel">Jesteś {odleglosc}m od celu</div> }
 
     </Layout>
 }
