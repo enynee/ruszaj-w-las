@@ -7,7 +7,7 @@ export default function() {
     const [zdobyta, setZdobyta] = useState(false);
     const [odleglosc, setOdleglosc] = useState(Infinity);
 
-    const koordynatyPunktu = [54.559783, 18.295506];
+    const koordynatyPunktu = [54.559335, 18.296011];
     if (typeof window !== "undefined") {
         const watchID = navigator.geolocation.watchPosition((position) => {
 

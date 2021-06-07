@@ -43,7 +43,7 @@ export default function() {
             <p className="p-opis">Leśnicy już wiele lat temu zauważyli tendencję do zmniejszania się ilości wody w naturalnych ciekach i zbiornikach wodnych. Wprowadzono porogram małej retencji w lasach, która polega m.in na budowaniu nowych zbiorników wodnych i urządzeń wodnych, tworzeniu zastawek, progów, jazów. Dzięki temu Lasy Państwowe oceniają, że tylko w latach 1998-2015 udało się zretencjonować aż 52,7 mln m3 wody. Mała retencja wodna nie tylko zwiększa zasoby wody i minimalizuje skutki suszy. Dzięki niej zmniejsza się zagrożenie powodziowe, zwiększa się ilość zbiorników wodnych, które można wykorzystać w trakcie pożarów, a przede wszystkim - zwiększa zasoby wody, zwiększając przy tym różnorodność roślin i zwierząt.</p> 
         </div>}
 
-        { zdobyta === false &&<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2319.829906250475!2d18.492359316008255!3d54.448289099300524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDI2JzUzLjgiTiAxOMKwMjknNDAuNCJF!5e0!3m2!1spl!2spl!4v1620582063506!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>}
+        { zdobyta === false &&<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2319.8300829610716!2d18.49235931608882!3d54.44828598022469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDI2JzUzLjgiTiAxOMKwMjknNDAuNCJF!5e0!3m2!1spl!2spl!4v1623099262574!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>}
 
         { zdobyta === true && <div className="punkt-odznaka">
         <img src={mokradlo}/>

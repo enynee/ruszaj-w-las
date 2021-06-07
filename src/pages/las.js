@@ -7,7 +7,7 @@ export default function() {
     const [zdobyta, setZdobyta] = useState(false);
     const [odleglosc, setOdleglosc] = useState(Infinity);
 
-    const koordynatyPunktu = [54.386400, 18.509583];
+    const koordynatyPunktu = [54.386416, 18.508719];
     if (typeof window !== "undefined") {
         const watchID = navigator.geolocation.watchPosition((position) => {
 
@@ -44,7 +44,7 @@ export default function() {
             <p className="p-opis">Czy w Polsce wycina się coraz więcej drzew? Nie. Lesistość w Polsce wzrasta z roku na rok, co oznacza, że lasów w Polsce przybywa. W roku 1945 roku lesistość w naszym kraju wynosiła 20,8%, a obecnie wynosi 29,6%. Poza tym w Lasach Państwowych dla każdego Nadleśnictwa konstruowany jest 10-letni Plan Urządzenia Lasu, który dokładnie określa ile drzew i z jakich dokładnie obszarów w danym lesie można wyciąć, a ile powierzchni należy odnowić. W lasach dąży się do tego, aby w każdym roku sadzić więcej drzew niż wycięto, a z badań przeprowadzonych w 2017 roku wynika, że na każde wycięte drzewo posadzono ok. 13 młodych drzewek. </p>
         </div>}
 
-        { zdobyta === false &&<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2323.3346907175087!2d18.50721131600654!3d54.38640310399826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDIzJzExLjAiTiAxOMKwMzAnMzMuOCJF!5e0!3m2!1spl!2spl!4v1620578774080!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>}
+        { zdobyta === false &&<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2323.333961781846!2d18.506530316086693!3d54.38641598021008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDIzJzExLjEiTiAxOMKwMzAnMzEuNCJF!5e0!3m2!1spl!2spl!4v1623098743030!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>}
 
         { zdobyta === true && <div className="punkt-odznaka">
         <img src={las}/>

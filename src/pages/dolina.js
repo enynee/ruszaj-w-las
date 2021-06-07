@@ -7,7 +7,7 @@ export default function() {
     const [zdobyta, setZdobyta] = useState(false);
     const [odleglosc, setOdleglosc] = useState(Infinity);
 
-    const koordynatyPunktu = [54.405550, 18.531966];
+    const koordynatyPunktu = [54.405216, 18.533653];
     if (typeof window !== "undefined") {
         const watchID = navigator.geolocation.watchPosition((position) => {
 
@@ -44,7 +44,7 @@ export default function() {
             <p className="p-opis">Po przeciwnej stronie możesz zauważyć las grądowy. Drzewa, które tworzą grąd to: grab zwyczajny, dąb szypułkowy, lipa drobnolistna oraz sosna zwyczajna. Z racji wysokiej żyzności tego drzewostanu możesz zaobserwować bogate i bujne runo leśne. W zależności od pory roku możesz w runie znaleźć możesz: wiosną - zawilca gajowego (Anemone nemorosa L.), jaskry (Ranunculus), przytulię wonną (Galium odoratum), gajowca żółtego (Lamium galeobdolon) oraz gwiazdnicę wielokwiatową (Stellaria holostea L.), latem zaś - dziurawca zwyczajnego (Hypericum perforatum L.)  oraz pszeńca gajowego (Melampyrum nemorosum).</p>
         </div>}
 
-        { zdobyta === false &&<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.250459839199!2d18.529777316007024!3d54.405553102544836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDI0JzIwLjAiTiAxOMKwMzEnNTUuMSJF!5e0!3m2!1spl!2spl!4v1620580010246!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe> }
+        { zdobyta === false &&<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.269549209062!2d18.531464316087376!3d54.40521598021461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDI0JzE4LjgiTiAxOMKwMzInMDEuMiJF!5e0!3m2!1spl!2spl!4v1623098913750!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>}
 
         { zdobyta === true && <div className="punkt-odznaka">
         <img src={dolina}/>

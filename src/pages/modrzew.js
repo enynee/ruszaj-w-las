@@ -7,7 +7,7 @@ export default function() {
     const [zdobyta, setZdobyta] = useState(false);
     const [odleglosc, setOdleglosc] = useState(Infinity);
 
-    const koordynatyPunktu = [54.561533, 18.354844];
+    const koordynatyPunktu = [54.562037, 18.354869];
     if (typeof window !== "undefined") {
         const watchID = navigator.geolocation.watchPosition((position) => {
 
@@ -43,7 +43,7 @@ export default function() {
             
         </div>}
 
-        { zdobyta === false &&<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2313.4093939600657!2d18.352655316011454!3d54.56153609069485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDMzJzQxLjUiTiAxOMKwMjEnMTcuNCJF!5e0!3m2!1spl!2spl!4v1620580442417!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>}
+        { zdobyta === false &&<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2313.380976047316!2d18.352680316092624!3d54.56203698025174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDMzJzQzLjMiTiAxOMKwMjEnMTcuNSJF!5e0!3m2!1spl!2spl!4v1623098971351!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>}
 
         { zdobyta === true && <div className="punkt-odznaka">
         <img src={modrzew}/>

@@ -8,7 +8,7 @@ export default function() {
     const [zdobyta, setZdobyta] = useState(false);
     const [odleglosc, setOdleglosc] = useState(Infinity);
 
-    const koordynatyPunktu = [54.355656, 18.802909];
+    const koordynatyPunktu = [54.355639, 18.802907];
     if (typeof window !== "undefined") {
         const watchID = navigator.geolocation.watchPosition((position) => {
 
@@ -45,7 +45,7 @@ export default function() {
             <p className="p-opis">Po drodze do tego punktu spotkałeś 5 tablic informacyjnych. Podążając dalej ścieżką, odnajdziesz 5 kolejnych tablic. Gorąco zachęcam Cię do dalszego spaceru wyznaczoną ścieżką oraz obserwacji napotkanych gatunków ptaków.</p>
         </div>}
 
-        { zdobyta === false &&<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.074805516368!2d18.800720316005584!3d54.355659106330684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDIxJzIwLjQiTiAxOMKwNDgnMTAuNSJF!5e0!3m2!1spl!2spl!4v1620554305728!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>}
+        { zdobyta === false &&<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.0759444389605!2d18.800718316085714!3d54.35563898020285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDIxJzIwLjMiTiAxOMKwNDgnMTAuNSJF!5e0!3m2!1spl!2spl!4v1623098504776!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>}
 
         { zdobyta === true && <div className="punkt-odznaka">
         <img src={wieza}/>

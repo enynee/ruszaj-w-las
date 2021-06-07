@@ -43,7 +43,7 @@ export default function() {
             <p className="p-opis">Planując piesze wycieczki warto skorzystać z wyznaczonych szlaków. Zyskujemy dzięki temu pewność, że nasza wyprawa będzie przebiegała przez piękne obszary, które są w ciekawy sposób opisane na tablicach informacyjnych. Możemy też skorzystać z licznych ławeczek oraz wiat turystycznych i przede wszystkim, na szlaku nie zgubimy się, bo jest on bardzo dobrze oznaczony. </p>
         </div>}
 
-        { zdobyta === false &&<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1551.4607004237546!2d18.541806977106884!3d54.36467519452793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDIxJzUzLjciTiAxOMKwMzInMzAuOSJF!5e0!3m2!1spl!2spl!4v1620581337699!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>}
+        { zdobyta === false &&<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2324.7429610408776!2d18.55192531608593!3d54.36152298020428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDIxJzQxLjUiTiAxOMKwMzMnMTQuOCJF!5e0!3m2!1spl!2spl!4v1623099165076!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>}
 
         { zdobyta === true && <div className="punkt-odznaka">
         <img src={park}/>

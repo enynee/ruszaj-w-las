@@ -7,7 +7,7 @@ export default function() {
     const [zdobyta, setZdobyta] = useState(false);
     const [odleglosc, setOdleglosc] = useState(Infinity);
 
-    const koordynatyPunktu = [54.522946, 18.248281];
+    const koordynatyPunktu = [54.523814, 18.251261];
     if (typeof window !== "undefined") {
         const watchID = navigator.geolocation.watchPosition((position) => {
 
@@ -45,7 +45,7 @@ export default function() {
             <p>Zachęcam Cię do dalszego spaceru po wyznaczonych szlakach Rezerwatu Przyrody. Koniecznie obejrzyj jeziora Wygoda, Pałsznik i Krypko.</p>
         </div>}
 
-        { zdobyta === false &&<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2315.5980912915443!2d18.24609231601039!3d54.522949093628334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDMxJzIyLjYiTiAxOMKwMTQnNTMuOCJF!5e0!3m2!1spl!2spl!4v1620580925994!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>}
+        { zdobyta === false &&<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2315.5490454649557!2d18.249072316091368!3d54.523813980242664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDMxJzI1LjciTiAxOMKwMTUnMDQuNSJF!5e0!3m2!1spl!2spl!4v1623099016230!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>}
 
         { zdobyta === true && <div className="punkt-odznaka">
         <img src={glaz}/>

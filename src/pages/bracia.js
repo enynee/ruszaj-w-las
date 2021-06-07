@@ -7,7 +7,7 @@ export default function() {
     const [zdobyta, setZdobyta] = useState(false);
     const [odleglosc, setOdleglosc] = useState(Infinity);
 
-    const koordynatyPunktu = [54.542253, 18.364956];
+    const koordynatyPunktu = [54.540995, 18.365753];
     if (typeof window !== "undefined") {
         const watchID = navigator.geolocation.watchPosition((position) => {
 
@@ -43,7 +43,7 @@ export default function() {
             <p className="p-opis">Każde zranione drzewo dąży do jak najszybszego zamknięcia rany, tak by nie dostały się do środka woda, grzyby i patogeny, które mogą wywołać choroby i śmierć drzewa. Po zrośnięciu drzewa lub drzew nad kallusem powstaje kambium - tkanka która wytwarza drewno i łyko.</p>
         </div>}
 
-        { zdobyta === false &&<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2314.5715040617156!2d18.364310017840467!3d54.54105025453625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDMyJzI3LjgiTiAxOMKwMjEnNTcuMyJF!5e0!3m2!1spl!2spl!4v1620582728481!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>}
+        { zdobyta === false &&<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2314.5746392333263!2d18.363564316091917!3d54.5409949802467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDMyJzI3LjYiTiAxOMKwMjEnNTYuNyJF!5e0!3m2!1spl!2spl!4v1623099306863!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>}
         
         { zdobyta === true && <div className="punkt-odznaka">
         <img src={bracia}/>
