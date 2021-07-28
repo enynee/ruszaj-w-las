@@ -98,7 +98,7 @@ export default function () {
                 </div>
             </div>
         </div>
-        <div className="odznaka-title"><img src={odznaka} /><span class="title-odznakaterenowa">Odznaka Terenowa</span></div>
+        <div className="odznaka-title"><img src={odznaka} className="czarno-biale" /><span class="title-odznakaterenowa">Odznaka Terenowa</span></div>
 
     </Layout>
 }
